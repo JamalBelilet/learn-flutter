@@ -1,0 +1,23 @@
+# Navigate with named routes
+
+0. Define the routes
+```dart
+MaterialApp(
+  initialRoute: '/',
+  routes: {
+    '/': (context) => HomeScreen(),
+    '/notifications': (context) => NotificationsScreen(),
+    '/search': (context) => SearchScreen(),
+  },
+);
+```
+
+1. Navigate to the second screen
+```dart
+Navigator.pushNamed('/search');
+```
+
+2. Navigate back
+```dart
+Navigator.pop();
+```

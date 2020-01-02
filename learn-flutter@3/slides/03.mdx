@@ -1,0 +1,44 @@
+# ui-as-code
+
+1. Spread operator
+```dart
+build(context) {
+  return Column(children: [
+    AnyWidget(),
+    ...someWidgets(),
+    AnyWidget(),
+  ]);
+}
+
+List<Widget> someWidgets() {
+  return [
+    AnyWidget(),
+    AnyWidget(),
+    AnyWidget(),
+  ]
+}
+```
+
+2. Collection if
+
+```dart
+build(context) {
+  return Column(children: [
+    AnyWidget(),
+    if (isActive)
+      FlatButton(child: Text('Next')),
+  ]);
+}
+```
+
+3. Collection for
+
+```dart
+build(context) {
+  return Column(children: [
+    AnyWidget(),
+    for (final article in articles)
+      AnyWidget(article),
+  ]);
+}
+```

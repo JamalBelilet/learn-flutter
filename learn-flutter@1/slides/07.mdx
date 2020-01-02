@@ -1,0 +1,16 @@
+# Dart (2)
+
+4. Named parameters
+```dart
+void logger(message, client) {
+  print('$client: $message');
+}
+logger('hey, sup!', 'Jamal');
+
+// --- vs ---
+
+void logger({message, client}) {
+  print('$client: $message');
+}
+logger(message: 'hey, sup!', client: 'Jamal');
+```

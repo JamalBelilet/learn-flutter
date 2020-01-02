@@ -1,0 +1,49 @@
+# Column & Row
+
+```dart
+Column(
+  mainAxisAlignment: MainAxisAlignment.start,
+  crossAxisAlignment: CrossAxisAlignment.center,
+  children: <Widget>[
+    AnyWidget(),
+    AnyWidget(),
+    AnyWidget(),
+  ],
+),
+
+Row(
+  mainAxisAlignment: MainAxisAlignment.start,
+  crossAxisAlignment: CrossAxisAlignment.center,
+  children: <Widget>[
+    AnyWidget(),
+    AnyWidget(),
+    AnyWidget(),
+  ],
+),
+```
+
+
+## Spacer, SizedBox and Expanded
+
+```dart
+Row(
+  children: <Widget>[
+    AnyWidget(),
+    Spacer(),
+    AnyWidget(),
+    SizedBox(width: 32),
+    AnyWidget(),
+  ],
+),
+
+Row(
+  children: <Widget>[
+    Expanded(
+      child: AnyWidget()
+    ),
+    AnyWidget(),
+    SizedBox(width: 32),
+    AnyWidget(),
+  ],
+),
+```

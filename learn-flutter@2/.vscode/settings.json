@@ -1,0 +1,24 @@
+{
+  "workbench.colorTheme": "Night Owl Light",
+  "workbench.colorCustomizations": {
+    "editorCursor.background": "#ffffff",
+    "editorCursor.foreground": "#0000bb",
+    "editor.lineHighlightBackground": "#f0f0f0",
+    "editor.selectionBackground": "#aaeeff"
+  },
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.visible": false,
+  "explorer.openEditors.visible": 0,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderIndentGuides": false,
+  "editor.fontFamily": "Dank Mono, SF Mono",
+  "editor.fontWeight": "500",
+  "editor.fontSize": 24,
+  "terminal.integrated.fontFamily": "SF Mono",
+  "terminal.integrated.fontWeight": "800",
+  "terminal.integrated.fontSize": 28,
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "editor.formatOnSave": false,
+  "editor.lineNumbers": "off",
+}

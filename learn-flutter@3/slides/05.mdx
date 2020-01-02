@@ -1,0 +1,29 @@
+# Animations (Implicit animations)
+
+```dart
+class AnyWidget extends StatefulWidget {
+  _AnyWidgetState createState() => _AnyWidgetState();
+}
+
+class _AnyWidgetState extends State<AnyWidget> {
+  bool show = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(children: <Widget>[
+      FlatButton(
+        child: Text('Show details'),
+        onPressed: () => setState(() {
+          show = !show;
+        }),
+      ),
+      AnimatedOpacity(
+        duration: Duration(seconds: 3),
+        opacity: show ? 1 : 0,
+        child: AnotherWidget(),
+      )
+    ]);
+  }
+}
+```
+

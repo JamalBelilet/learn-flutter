@@ -1,0 +1,41 @@
+# Networking
+
+To consume online resources you need to add the `http` package to `pubspec.yaml`
+
+<!-- pubspec.yaml -->
+```yaml
+dependencies:
+  http: ^0.12.0+2
+```
+
+<!-- AnyWidget -->
+```dart
+import 'package:http/http.dart';
+import 'dart:convert';
+
+class AnyStatefulWidget extends StatefulWidget {
+  State createState() ⇒ AnyStatefulWidgetState();
+}
+
+class AnyStatefulWidgetState extends State<AnyStatefulWidget> {
+  List literals = [];
+  void getLiterals() async {
+    final dirtyLiterals = await get("https://literals.com/");
+    literals = json.decode(dirtyLiterals);
+    setState((){});
+  }
+  build(context) {
+    return Column(
+      children: <Widget>[
+        for(final literal in literals)
+          Text(literal),
+        SizedBox(height: 16),
+        FlateButton(
+          onPressed: getLiterals,
+          child: Text("a label here"),
+        ),
+      ],
+    );
+  }
+}
+```

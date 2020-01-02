@@ -1,0 +1,21 @@
+# Dart (3)
+
+```dart
+class User {
+  User(this.name, this.username, this.age);
+  String name;
+  String username;
+  int age;
+}
+final hamid = User("Hamid", "hamid32", 32);
+
+// --- vs ---
+
+class User {
+  User({this.name, this.username, this.age});
+  String name;
+  String username;
+  int age;
+}
+final hamid = User(name: "Hamid", username: "hamid32");
+```

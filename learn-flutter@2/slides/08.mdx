@@ -1,0 +1,28 @@
+# State management
+
+```dart
+class AnyWidgetpage extends StatefulWidget {
+  @override
+  _AnyWidgetpageState createState() => _AnyWidgetpageState();
+}
+
+class _AnyWidgetpageState extends State<AnyWidgetpage> {
+  int count = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        FlatButtion(
+          child: Text('...'),
+          onPressed: () {
+            count++; // 0. update variables
+            setState(() {}); // 1. re-build with the new values
+          }
+        ),
+        Text(count)
+      ]
+    );
+  }
+}
+```
